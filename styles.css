@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+
+header {
+    background-color: #333; /* Dark background color */
+    padding: 16px 0; /* Add vertical padding */
+}
+
+
+/* Flexbox container for centering */
+.centered-image-section {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 150px; /* Adjust height as needed */
+    background-color: #baacac; /* Optional: background color */
+}
+
+/* Style for the image */
+.centered-image {
+    max-width: 50%;
+    height: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+main {
+    padding: 1rem;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem; /* Smaller gap for flex items */
+}
+
+
+.project-card {
+    max-width: 45%; /* Set a smaller max-width for the card */
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding:0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.project-card img {
+    width: 80%; /* Use a percentage to make the images responsive */
+    max-width: 500px; /* Smaller size by default */
+    height: auto;
+}
+
+#contact {
+ background-color:#baacac;
+color: #000000;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.skills {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center; 
+}
+
+.skills-icons img {
+    max-width: 50px; /* Adjust the size as needed */
+    width: auto;
+    object-fit: contain; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem; /* Reduce the margin-top */
+}
+
+
+@media (max-width: 768px) {
+    .skills-icons img {
+        max-width: 80px; /* Smaller icons for mobile */
+    }
+}
